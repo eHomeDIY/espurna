@@ -516,7 +516,7 @@
 #endif
 
 #ifndef WEB_FORCE_PASS_CHANGE
-#define WEB_FORCE_PASS_CHANGE       1           // Force the user to change the password if default one
+#define WEB_FORCE_PASS_CHANGE       0           // Force the user to change the password if default one
 #endif
 
 #ifndef WEB_PORT
@@ -587,7 +587,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef MDNS_SERVER_SUPPORT
-#define MDNS_SERVER_SUPPORT         1           // Publish services using mDNS by default (1.48Kb)
+#define MDNS_SERVER_SUPPORT         0           // Publish services using mDNS by default (1.48Kb)
 #endif
 
 #ifndef MDNS_CLIENT_SUPPORT
@@ -1036,7 +1036,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef DOMOTICZ_SUPPORT
-#define DOMOTICZ_SUPPORT        MQTT_SUPPORT    // Build with domoticz (if MQTT) support (1.72Kb)
+#define DOMOTICZ_SUPPORT        0               // Build with domoticz (if MQTT) support (1.72Kb)
 #endif
 
 #define DOMOTICZ_ENABLED        0               // Disable domoticz by default
@@ -1048,7 +1048,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef HOMEASSISTANT_SUPPORT
-#define HOMEASSISTANT_SUPPORT   MQTT_SUPPORT    // Build with home assistant support (if MQTT, 1.64Kb)
+#define HOMEASSISTANT_SUPPORT   0               // Build with home assistant support (if MQTT, 1.64Kb)
 #endif
 
 #ifndef HOMEASSISTANT_ENABLED
@@ -1113,7 +1113,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef THINGSPEAK_SUPPORT
-#define THINGSPEAK_SUPPORT          1               // Enable Thingspeak support by default (2.56Kb)
+#define THINGSPEAK_SUPPORT          0               // Enable Thingspeak support by default (2.56Kb)
 #endif
 
 #ifndef THINGSPEAK_ENABLED
@@ -1160,7 +1160,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef SCHEDULER_SUPPORT
-#define SCHEDULER_SUPPORT           1           // Enable scheduler (1.77Kb)
+#define SCHEDULER_SUPPORT           0           // Enable scheduler (1.77Kb)
 #endif
 
 #ifndef SCHEDULER_MAX_SCHEDULES
@@ -1176,7 +1176,7 @@
 #endif
 
 #ifndef NTP_SERVER
-#define NTP_SERVER                  "pool.ntp.org"  // Default NTP server
+#define NTP_SERVER                  "0.bg.pool.ntp.org"  // Default NTP server
 #endif
 
 #ifndef NTP_TIMEOUT
@@ -1184,7 +1184,7 @@
 #endif
 
 #ifndef NTP_TIME_OFFSET
-#define NTP_TIME_OFFSET             60              // Default timezone offset (GMT+1)
+#define NTP_TIME_OFFSET             120              // Default timezone offset (GMT+1)
 #endif
 
 #ifndef NTP_DAY_LIGHT
@@ -1217,14 +1217,14 @@
 
 // This setting defines whether Alexa support should be built into the firmware
 #ifndef ALEXA_SUPPORT
-#define ALEXA_SUPPORT               1               // Enable Alexa support by default (10.84Kb)
+#define ALEXA_SUPPORT               0               // Enable Alexa support by default (10.84Kb)
 #endif
 
 // This is default value for the alexaEnabled setting that defines whether
 // this device should be discoberable and respond to Alexa commands.
 // Both ALEXA_SUPPORT and alexaEnabled should be 1 for Alexa support to work.
 #ifndef ALEXA_ENABLED
-#define ALEXA_ENABLED               1
+#define ALEXA_ENABLED               0
 #endif
 
 // -----------------------------------------------------------------------------

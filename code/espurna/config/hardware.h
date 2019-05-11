@@ -2379,14 +2379,16 @@
 #elif defined(GENERIC_ESP01S_DS18B20_V10)
 
     // Info
-    #define MANUFACTURER        "GENERIC"
-    #define DEVICE              "ESP01S_DS18B20_10"
+    #define MANUFACTURER        "EHOMEDIY"
+    #define DEVICE              "WT-03"
 
-    // DB18B20
-    #ifndef DALLAS_SUPPORT
-    #define DALLAS_SUPPORT      1
-    #endif
-    #define DALLAS_PIN          2
+    // I2C
+    #define I2C_SDA_PIN           2  // D9
+    #define I2C_SCL_PIN           0  // D10
+
+    #define SENSOR_SUPPORT        1
+    #define THINGSPEAK_SUPPORT    0
+    #define ALEXA_API_SUPPORT     0
 
 // -----------------------------------------------------------------------------
 // ESP-DIN relay board V1

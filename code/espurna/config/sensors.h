@@ -155,7 +155,7 @@
 //------------------------------------------------------------------------------
 
 #ifndef BMX280_SUPPORT
-#define BMX280_SUPPORT                  0
+#define BMX280_SUPPORT                  1
 #endif
 
 #ifndef BMX280_NUMBER
@@ -168,10 +168,10 @@
                                                 //   (BMX280_ADDRESS != 0x00) then sensor #1 is the unnamed address
 
 #define BMX280_MODE                     1       // 0 for sleep mode, 1 or 2 for forced mode, 3 for normal mode
-#define BMX280_STANDBY                  0       // 0 for 0.5ms, 1 for 62.5ms, 2 for 125ms
+#define BMX280_STANDBY                  4       // 0 for 0.5ms, 1 for 62.5ms, 2 for 125ms
                                                 // 3 for 250ms, 4 for 500ms, 5 for 1000ms
                                                 // 6 for 10ms, 7 for 20ms
-#define BMX280_FILTER                   0       // 0 for OFF, 1 for 2 values, 2 for 4 values, 3 for 8 values and 4 for 16 values
+#define BMX280_FILTER                   1       // 0 for OFF, 1 for 2 values, 2 for 4 values, 3 for 8 values and 4 for 16 values
 #define BMX280_TEMPERATURE              1       // Oversampling for temperature (set to 0 to disable magnitude)
                                                 // 0b000 = 0 = Skip measurement
                                                 // 0b001 = 1 = 1x 16bit/0.0050C resolution
@@ -951,7 +951,7 @@
 // -----------------------------------------------------------------------------
 
 #ifndef I2C_SUPPORT
-#define I2C_SUPPORT                     0       // I2C enabled (1.98Kb)
+#define I2C_SUPPORT                     1       // I2C enabled (1.98Kb)
 #endif
 
 #define I2C_USE_BRZO                    0       // Use brzo_i2c library or standard Wire
